@@ -13,7 +13,7 @@ data <- read.table("./data/household_power_consumption.txt",header = TRUE, sep =
 str(data)
 
 
-#Convert Datatypes and filter by dates yyy
+#Convert Datatypes and filter by dates
 
 data$Date <- as.Date(data$Date,format = "%d/%m/%Y")
 data1 <- data %>%
